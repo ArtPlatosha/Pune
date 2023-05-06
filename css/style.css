@@ -1,3 +1,7 @@
+/* google fonts */ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+ /* font-family: 'Poppins', sans-serif; */
+
 :root {
 	--clr-primary: #ff6f42;
 	--clr-secondary: #f02602;
