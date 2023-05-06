@@ -138,3 +138,38 @@ header .right {
 		display: none;
 	}	
 }
+
+/* hamburger icon style */
+.hamb {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.hamb {
+		display: block;
+		width: 32px;
+		cursor: pointer;
+	}	
+
+	.hamb span {
+		display: block;
+		height: 2px;
+		background-color: var(--clr-white);
+	}
+
+	.hamb span.mid {
+		margin: 7px 0 7px 7px;
+	}
+
+	.hamb.active span.top {
+		transform: translateY(9px) rotate(42deg);
+	}
+
+	.hamb.active span.mid {
+		opacity: 0;
+	}
+
+	.hamb.active span.bottom {
+		transform: translateY(-9px) rotate(-42deg);
+	}
+}
