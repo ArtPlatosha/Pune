@@ -64,3 +64,23 @@ img {
 	height: auto;
 	vertical-align: baseline;
 }
+
+/* reused styles */
+.container {
+	width: 1280px;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+
+/* height section style */
+.height {
+	width: 100%;
+	height: auto;
+	background-image: url(../img/top-image.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: color;
+}
