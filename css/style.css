@@ -1,0 +1,62 @@
+:root {
+	--clr-primary: #ff6f42;
+	--clr-secondary: #f02602;
+
+	--clr-white: #fefefe;
+	--clr-black: #000000;
+}
+
+/* css reset 
+----------++---------- */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.5;
+	background-color: #000000;
+	color: var(--clr-white);
+	overflow-x: hidden;
+	position: relative;
+}
+
+h1,
+h2 {
+	line-height: 1.2;
+}
+
+a,
+input,
+button {
+	display: inline-block;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+	vertical-align: middle;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: baseline;
+}
