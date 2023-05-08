@@ -193,6 +193,7 @@ header .right {
 		bottom: 0;
 		right: -100%;
 		z-index: 4;
+		transition: .3s right;
 	}
 
 	.nav-mobile.slide {
