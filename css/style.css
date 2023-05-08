@@ -175,3 +175,42 @@ header .right {
 		transform: translateY(-9px) rotate(-42deg);
 	}
 }
+
+/* mobile navigation style */
+.nav-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.nav-mobile {
+		display: block;
+		width: 80%;
+		height: auto;
+		padding: 150px 50px 0px;
+		background-color: var(--clr-black);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -100%;
+		z-index: 4;
+	}
+
+	.nav-mobile.slide {
+		right: 0;
+
+	}
+
+	.nav-mobile a {
+		width: 100%;
+		margin-bottom: 32px;
+		font-size: 2rem;
+		font-weight: 500;
+		letter-spacing: 1px;
+		color: var(--clr-white);
+		transition: .3s color;
+	}
+
+	.nav-mobile a:is(:hover, :focus) {
+		color: var(--clr-primary);
+	}
+}
