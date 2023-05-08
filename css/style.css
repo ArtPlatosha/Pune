@@ -215,3 +215,171 @@ header .right {
 		color: var(--clr-primary);
 	}
 }
+
+/* hero section style */
+.hero {
+	width: 100%;
+}
+
+.hero .container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.hero .content {
+	width: 550px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tag {
+	display: inline-block;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--clr-primary);
+	margin-bottom: 32px;
+	position: relative;
+}
+
+.tag:before {
+	content: '';
+	width: 35px;
+	height: 2px;
+	background-color: var(--clr-primary);
+	position: absolute;
+	left: -50px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.hero .title {
+	font-size: 5rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	margin-bottom: 40px;
+}
+
+.hero .title span {
+	font-weight: 600;
+	font-size: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+	.hero .title {
+		font-size: 3.5rem;
+	}
+
+	.hero .title span {
+	font-size: 4rem;
+	}
+}
+
+.hero form {
+	width: 420px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.hero form input {
+	width: 100%;
+	background-color: #ff6f4220;
+	color: #fefefe90;
+	padding: 16px;
+	border: 1px solid #ff6f4200;
+	border-radius: 8px;
+	font-size: 1rem;
+	position: relative;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.hero form input:is(:hover, :focus) {
+	background-color: #f0260250;
+	border: 1px solid var(--clr-secondary);
+}
+
+.hero form button {
+	background-color: var(--clr-primary);
+	cursor: pointer;
+	padding: 12px 24px;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--clr-white);
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
+	z-index: 3;
+}
+
+.hero form button:is(:hover, :active) {
+	background-color: var(--clr-secondary);
+}
+
+.hero form button i {
+	margin-left: 5px;
+}
+
+.hero .social,
+.hero .scroll {
+	position: absolute;
+	bottom: 50px;
+}
+
+.hero .social {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.hero .social .icons {
+	display: flex;
+	gap: 24px;
+}
+
+.hero .social .icons a {
+	font-size: 1.2rem;
+	color: var(--clr-white);
+}
+
+.hero .social .icons a:hover {
+	color: var(--clr-primary);
+}
+
+.hero .scroll {
+	right: 0;
+	color: var(--clr-white);
+}
+
+.hero .scroll:hover {
+	color: var(--clr-primary);
+}
+
+.hero .scroll i {
+	margin-left: 5px;
+	font-size: 1.5rem;
+	animation-name: slide;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+	25% {
+		transform: translateY(-8px);
+	}
+
+	50% {
+		transform: translateY(0px);
+	}
+
+	75% 
+	{transform: translateY(8px);
+	}
+}
