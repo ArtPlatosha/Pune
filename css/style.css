@@ -139,6 +139,24 @@ header .right {
 	}	
 }
 
+.btn {
+	color: var(--clr-white);
+	font-weight: 500;
+}
+
+.btn-fill {
+	font-weight: 600;
+	background-color: var(--clr-primary);
+	padding: 12px 24px;
+	border-radius: 8px;
+	box-shadow: 0 6px 10px rgb(255 156 69 / 25%);
+	transition: .3s background-color;
+}
+
+.btn-fill:is(:hover, :active) {
+	background-color: var(--clr-secondary);
+}
+
 /* hamburger icon style */
 .hamb {
 	display: none;
@@ -474,4 +492,96 @@ header .right {
 	font-size: clamp(1.5rem, 4.5vw, 2.5rem);
 	text-transform: capitalize;
 	line-height: 1.3;
+}
+
+/* footer section */
+footer {
+	padding: 100px 0 50px;
+}
+
+footer .top {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 32px;
+	border-bottom: 1px solid #979797;
+}
+
+footer .top .end {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+}
+
+footer .mid {
+	padding: 32px 0 80px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 32px;
+}
+
+@media screen and (max-width: 715px) {
+	footer .mid {
+		gap: 64px;
+		grid-template-columns: 1fr;
+	}
+}
+
+footer .mid .text {
+	width: 350px;
+	max-width: 100%;
+	font-size: 2.5rem;
+	text-transform: capitalize;
+	line-height: 1.3;
+}
+
+footer .mid .action {
+	display: flex;
+	gap: 40px;
+}
+
+footer .mid .action .links span {
+	display: block;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+footer .mid .action .links span a {
+	color: var(--clr-white);
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+
+footer .mid .action .links span a:hover {
+	color: var(--clr-primary);
+}
+
+footer .bottom {
+	display: flex;
+	gap: 32px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer .bottom .left a {
+	color: var(--clr-white);
+	margin-right: 16px;
+	font-weight: 500;
+}
+
+footer .bottom .left a:hover {
+	color: var(--clr-primary);
+}
+
+footer .bottom .right a {
+	font-size: 1.2rem;
+	color: var(--clr-white);
+	margin-left: 16px;
+}
+
+footer .bottom .right a:hover {
+	color: var(--clr-primary);
 }
